@@ -1,12 +1,13 @@
 import React from "react";
 import {useState, useEffect} from 'react';
 import '../styles/Weather.css';
+import {apiKey} from '../apis/utiils';
 
 function Weather(){
 
-    const apiKey = 'de26d68544e4fb8e272b852437ea6e3d';
 
-    const cityName = "las vegas";
+
+    const cityName = "Bangalore";
 
     // Createing the hook that shows data when we fetch from api --- suitable Data
     const[mainTemp, setMainTemp] = useState('');
@@ -37,11 +38,12 @@ function Weather(){
             <h1> Weather App</h1>
             
             <input 
-                placeholder="enter the name of city/state/country"                 
+                placeholder="search for a city...."                 
             />
-            <span>
+            <img src="https://cdn-icons-png.flaticon.com/512/2811/2811806.png" alt="search-image" />
+            {/* <span>
                 <button>Search</button>
-            </span>
+            </span> */}
             <h1>{place}</h1>
             <h2>Main Temprature : {mainTemp} Degree Celsius</h2>
             <h2>Temprature Descripiton : {description} </h2>
