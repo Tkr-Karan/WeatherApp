@@ -13,6 +13,23 @@ body{
     height: 400px;
     border: 2px solid cyan;
     border-radius: 30px;
-    background-color: greenyellow
+    background-color: greenyellow;
     /* text-align: center; */
+    line-height: 20px;
+    
+}
+
+.searchInput{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sup{
+    font-size: 40px;
+}
+
+.weather-image{
+
 }
