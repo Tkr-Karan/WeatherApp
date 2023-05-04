@@ -35,21 +35,22 @@ function Weather(){
 
     return(
         <React.Fragment>
-            <h1> Weather App</h1>
-            
-            <input 
-                placeholder="search for a city...."                 
-            />
-            <img src="https://cdn-icons-png.flaticon.com/512/2811/2811806.png" alt="search-image" />
-            {/* <span>
-                <button>Search</button>
-            </span> */}
-            <h1>{place}</h1>
-            <h2>Main Temprature : {mainTemp} Degree Celsius</h2>
-            <h2>Temprature Descripiton : {description} </h2>
-            <h2>Weather Parameter : {main}</h2>
-            <img src={"http://openweathermap.org/img/wn/" + iconId + "@2x.png"}/>
-            {/* <h2>Main Temprature : {mainTemp}</h2> */}
+            <div className="container">
+                <h1> Weather App</h1>
+                
+                <input 
+                    placeholder="search for a city...."                 
+                />
+                {/* <span>
+                    <button>Search</button>
+                </span> */}
+                <h1>{place}</h1>
+                <h2>Main Temprature : {mainTemp} Degree Celsius</h2>
+                <h2>Temprature Descripiton : {description} </h2>
+                <h2>Weather Parameter : {main}</h2>
+                <img src={"http://openweathermap.org/img/wn/" + iconId + "@2x.png"}/>
+                {/* <h2>Main Temprature : {mainTemp}</h2> */}
+            </div>
         </React.Fragment>
     )
 }
